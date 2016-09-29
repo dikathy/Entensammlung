@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Ente.cs" />
     <Compile Include="EnteCompareNachArt.cs" />
+    <Compile Include="EnteComparer.cs" />
     <Compile Include="EnteComparerNachGröße.cs" />
     <Compile Include="EntenArt.cs" />
     <Compile Include="Program.cs" />

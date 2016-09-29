@@ -21,12 +21,14 @@ namespace Entensammlung
 
             };
 
-            EnteComparerNachGröße ecGröße = new EnteComparerNachGröße();
-            enten.Sort(ecGröße);
+            EnteComparer ec = new EnteComparer();
+
+            ec.SortierenNach = Sortierung.GrößeDannArt;
+            enten.Sort(ec);
             EntenAusgeben(enten);
 
-            EnteCompareNachArt ecArt = new EnteCompareNachArt();
-            enten.Sort(ecArt);
+            ec.SortierenNach = Sortierung.ArtDannGröße;
+            enten.Sort(ec);
             EntenAusgeben(enten);
 
             Console.ReadKey();
