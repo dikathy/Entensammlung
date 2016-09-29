@@ -20,5 +20,9 @@ namespace Entensammlung
             else
                 return 0;
         }
+        public override string ToString()
+        {
+            return Größe + "-cm " + Art.ToString();
+        }
     }
 }
